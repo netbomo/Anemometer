@@ -1,0 +1,16 @@
+{
+  "name": "Anemometer",
+  "keywords": "Anemometer, Windlogger",
+  "description": "This library permit to read frequencies on timers 0 and 1",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/netbomo/Anemometer.git"
+  },
+  "authors": {
+    "name": "gilou",
+    "url": "https://github.com/netbomo/Anemometer.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}

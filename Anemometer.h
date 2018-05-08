@@ -73,7 +73,10 @@ public:
 	 ******************************************************************************/
 	inline unsigned char is_enable()const{return m_enable;}
 
-	inline bool flag_anemo()const{return flag_anemoReady;}
+	inline bool flag_anemo()const{	bool f;
+										f = flag_anemoReady;
+										flag_anemoReady = 0;
+										return f;}
 
 	inline float get_average()const{return m_average;}
 

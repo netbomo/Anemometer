@@ -165,6 +165,7 @@ void Anemometer::print_config(){
 	Serial.print("	*");Serial.print(m_id+3); Serial.print("3 offset:	");Serial.print(m_offset);Serial.println("		can be a float value. ex: 42.42");
 }
 
+// The config method permit to update parameters
 void Anemometer::config(char *stringConfig){
 	uint8_t item = stringConfig[2]-'0';	// convert item in char
 
@@ -187,7 +188,6 @@ void Anemometer::config(char *stringConfig){
 		default:
 			Serial.print("Bad request : ");Serial.println(item);
 	}
-
 }
 
 // Use this method for debugging or calibration accuracy
